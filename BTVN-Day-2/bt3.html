@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài Tập 3</title>
+    <style>
+      .main {
+        width: 80%;
+      }
+      #get_in_touch {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      div {
+        margin-bottom: 10px;
+      }
+
+      #pls {
+        display: inline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <p id="get_in_touch">
+        Get in touch with us by filling contact form below
+      </p>
+      <div>
+        <input type="text" id="fname" placeholder="* Enter your full name" />
+        <input
+          type="email"
+          id="email"
+          placeholder="* Enter your email address"
+        />
+      </div>
+      <div>
+        <input type="text" id="subject" placeholder="* Enter your subject" />
+      </div>
+      <div>
+        <textarea
+          id="content"
+          name="w3review"
+          rows="10"
+          cols="60"
+          placeholder="* Your message subject"
+        ></textarea>
+      </div>
+      <input type="submit" value="Send message" />
+      <p id="pls">* Please fill require form field, thanks!</p>
+    </div>
+  </body>
+</html>
