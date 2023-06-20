@@ -1,0 +1,55 @@
+body {
+    width: 100%;
+    font-size: 15px;
+}
+
+form {
+    width: 305px;
+    height: 328px;
+}
+
+div {
+    margin-bottom: 5px;
+}
+
+label {
+    display: inline-block;
+    width: 90px;
+    margin-right: 25px;
+}
+
+input {
+    border: 1px solid;
+    border-color: #156dca;
+}
+
+
+.role {
+    display: flex;
+    align-items: center;
+}
+
+.radio {
+    display: flex;
+    flex-direction: column;
+}
+
+.select-checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    text-align: center;
+}
+
+button {
+    border: 2px solid;
+    border-radius: 3px;
+    border-color: #156dca;
+}

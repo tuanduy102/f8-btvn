@@ -7,7 +7,7 @@
     <style>
       input {
         height: 30px;
-        border-color: azure;
+        /* border-color: azure; */
       }
 
       button {
@@ -19,12 +19,17 @@
         cursor: pointer;
       }
 
+      select {
+        width: 100%;
+        height: 36px;
+        /* border-color: azure; */
+      }
       p {
         margin-bottom: 5px;
       }
 
       td {
-        padding: 0
+        padding: 0;
       }
     </style>
   </head>
@@ -45,75 +50,47 @@
           <tr>
             <td width="60%">
               <p><b>First name</b></p>
-              <input
-                size="40"
-                type="text"
-                placeholder="John"
-              />
+              <input size="40" type="text" placeholder="John" />
             </td>
             <td>
               <p><b>Last name</b></p>
-              <input
-                size="40"
-                type="text"
-                placeholder="Smith"
-              />
+              <input size="40" type="text" placeholder="Smith" />
             </td>
           </tr>
 
           <tr>
             <td>
-              <p"><b>Email address</b></p>
-              <input
-                size="40"
-                type="text"
-                placeholder="john@example.com"
-              />
+              <p><b>Email address</b></p>
+              <input size="40" type="email" placeholder="john@example.com" />
             </td>
             <td>
-              <p"><b>Address</b></p>
-              <input
-                size="40"
-                type="text"
-                placeholder="Silk St"
-              />
+              <p><b>Address</b></p>
+              <input size="40" type="text" placeholder="Silk St" />
             </td>
           </tr>
 
           <tr>
             <td>
               <p><b>City</b></p>
-              <input
-                size="40"
-                type="text"
-                placeholder="London"
-              />
+              <input size="40" type="text" placeholder="London" />
             </td>
             <td>
               <p><b>State</b> (optional)</p>
-              <input
-                size="40"
-                type="text"
-                placeholder=""
-              />
+              <input size="40" type="text" placeholder="" />
             </td>
           </tr>
           <tr>
             <td>
               <p><b>ZIP code</b></p>
-              <input
-                size="40"
-                type="text"
-                placeholder="EC2Y 8DS"
-              />
+              <input size="40" type="text" placeholder="EC2Y 8DS" />
             </td>
             <td>
               <p><b>Country</b></p>
-              <input
-                size="40"
-                type="text"
-                placeholder="United Kingdom"
-              />
+              <select name="name" id="Country">
+                <option value="Viet Nam">Việt Nam</option>
+                <option value="Lao">Lào</option>
+                <option value="Campuchia">Campuchia</option>
+              </select>
             </td>
           </tr>
         </table>

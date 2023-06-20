@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài Tập 3</title>
+    <link rel="stylesheet" href="./css/bt3.css" />
+  </head>
+  <body>
+    <div class="form-access-manager">
+      <form action="#" method="get">
+        <div>
+          <label for="username">Username:</label>
+          <input type="text" name="username" />
+        </div>
+
+        <div>
+          <label for="password">Password:</label>
+          <input type="password" name="password" />
+        </div>
+
+        <div>
+          <label for="provinces">City of Employment:</label>
+          <input type="text" name="provinces" />
+        </div>
+
+        <div class="sever">
+          <label for="sever">Web sever:</label>
+          <select name="provinces" id="provinces">
+            <option value="0">--Choose a sever--</option>
+            <option value="1">Viet Nam</option>
+            <option value="2">Singapore</option>
+          </select>
+        </div>
+
+        <div class="role">
+          <label for="role">Please specify your role:</label>
+          <div class="radio">
+            <label><input type="radio" name="role" value="1" />Admin</label>
+            <label><input type="radio" name="role" value="2" />Engineer</label>
+            <label><input type="radio" name="role" value="3" />Manager</label>
+            <label><input type="radio" name="role" value="4" />Guest</label>
+          </div>
+        </div>
+
+        <div class="select-checkbox">
+          <label for="checkbox">Single Sign-on to the following:</label>
+          <div class="checkbox">
+            <label><input type="checkbox" value="mail" />Mail</label>
+            <label><input type="checkbox" value="payroll" />Payroll</label>
+            <label
+              ><input type="checkbox" value="self-service" />Self-service</label
+            >
+          </div>
+        </div>
+
+        <div class="button">
+          <button type="submit">Login</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

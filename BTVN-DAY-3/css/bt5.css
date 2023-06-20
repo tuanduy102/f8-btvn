@@ -1,0 +1,36 @@
+main {
+    text-align: center;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.img-number {
+    margin-bottom: 20px;
+}
+
+.title {
+    margin: 0px ;
+    font-size: 2.5em;
+}
+
+.highlight {
+    color: rgb(19, 208, 225);
+}
+
+.content {
+    color: #605e5e;
+    font-size: 18px;
+}
+
+button {
+    width: 150px;
+    height: 45px;
+    margin: 10px;
+    background-color: rgb(41, 40, 40);
+    color: white;
+    font-size: 1em;
+    border: 1px solid;
+    border-radius: 4px;
+    cursor: pointer;
+}

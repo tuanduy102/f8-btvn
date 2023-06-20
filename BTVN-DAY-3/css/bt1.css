@@ -1,0 +1,105 @@
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 20px;
+}
+
+.title {
+    padding: 15px;
+}
+
+.underline {
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-decoration-color: orange;
+}
+
+main {
+    width: 100%;
+    padding: 15px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+/* Open CSS Contact Info */
+.contact {
+    display: inline-block;
+    float: left;
+    width: 200px ;
+    margin-right: 50px;
+}
+
+.contact-info {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.list-contact-info {
+    padding: 0px;
+    list-style-type: none;
+    color: #2c2b2b;
+    font-size: 12px;
+}
+
+i {
+    float: left;
+    padding-right: 15px;
+    font-size: 20px;
+}
+
+
+li {
+    border-bottom: 20px;
+}
+
+p {
+    display: inline-block;
+    width: 130px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+/* Close CSS Contact Info */
+
+/* Open CSS Form send Message */
+
+.form-send-message {
+    display: inline-block;
+    width: 63%;
+    margin: 0px;
+}
+
+.title-form {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+form {
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+::placeholder {
+    padding-left: 15px;
+    color: #2c2b2b;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+}
+
+button {
+    width: 150px;
+    height: 30px;
+    background-color: rgb(22, 170, 207);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Close CSS Form send Message */
