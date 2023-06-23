@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@500&display=swap"
       rel="stylesheet"
     />
     <link
@@ -17,86 +17,385 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./CSS/reset.css" />
     <link rel="stylesheet" href="./CSS/bt3.css" />
   </head>
   <body>
-    <div class="">
-      <div class="block-title">
+    <div class="product-best-seller">
+      <div class="title-section">
         <h1 class="title">Best Seller</h1>
       </div>
 
-      <div class="navigation">
-        <nav class="service">
-          <ul>
-            <li>Skincare</li>
-            <li>Haircare</li>
-            <li>Cosmetics Cases</li>
-            <li>Fragrance</li>
-            <li>Makeup</li>
+      <div class="navigation-section">
+        <input
+          class="nav-tab"
+          type="radio"
+          name="tab"
+          id="skincare"
+          value="skincare"
+        />
+        <input
+          class="nav-tab"
+          type="radio"
+          name="tab"
+          id="haircare"
+          value="haircare"
+        />
+        <input
+          class="nav-tab"
+          type="radio"
+          name="tab"
+          id="cosmetics"
+          value="cosmetics"
+        />
+        <input
+          class="nav-tab"
+          type="radio"
+          name="tab"
+          id="fragrance"
+          value="fragrance"
+        />
+        <input
+          class="nav-tab"
+          type="radio"
+          name="tab"
+          id="makeup"
+          value="makeup"
+        />
+
+        <div class="nav">
+          <ul class="list-tabs">
+            <li>
+              <label class="tabs-skincare" for="skincare">Skincare</label>
+            </li>
+            <li>
+              <label class="tabs-haircare" for="haircare">Haircare</label>
+            </li>
+            <li>
+              <label class="tabs-cosmetics" for="cosmetics"
+                >Cosmetics Cases</label
+              >
+            </li>
+            <li>
+              <label class="tabs-fragrance" for="fragrance">Fragrance</label>
+            </li>
+            <li><label class="tabs-makeup" for="makeup">Makeup</label></li>
           </ul>
-        </nav>
-      </div>
+        </div>
 
-      <div class="list-product">
-        <div class="product">
-          <div class="img-product">
-            <img src="./img/img-1.jpg" alt="img-1" />
-          </div>
-
-          <div class="overlay-product">
-            <div class="action-icon">
-              <i class="far fa-heart"></i>
-              <i class="fas fa-exchange-alt"></i>
-              <i class="fa-solid fa-eye"></i>
+        <div class="container">
+          <div class="list-product-skincare">
+            <div class="info-item">
+              <div class="img-item">
+                <a class="img-hover" href="#">
+                  <img src="./img/img-1.jpg" alt="img-main" class="img-main" />
+                  <img src="./img/img-2.jpg" alt="img-sub" class="img-sub" />
+                </a>
+              </div>
+              <div class="btn-item">
+                <span class="item-btn">
+                  <a href="#" class="btn"><i class="far fa-heart"></i></a>
+                  <a href="#" class="btn"
+                    ><i class="fas fa-exchange-alt"></i
+                  ></a>
+                  <a href="#" class="btn"><i class="fas fa-eye"></i></a>
+                </span>
+                <span class="item-btn-add-to-cart">
+                  <a href="#" class="btn-add-to-cart">Add To Cart</a>
+                </span>
+              </div>
+              <div class="rating-item">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star no-rate"></i>
+              </div>
+              <div class="title-price-item">
+                <h2>
+                  <a class="title-item" href="#"
+                    >Casual Shirt With Ruffle Hem</a
+                  >
+                </h2>
+                <p class="price-item">$122.00</p>
+              </div>
             </div>
-
-            <div class="btn-add-to-cart">
-              <button class="add-to-cart">Add To Cart</button>
+            <!-- end item 1 -->
+            <div class="info-item">
+              <div class="img-item">
+                <a class="img-hover" href="#">
+                  <img src="./img/img-1.jpg" alt="img-main" class="img-main" />
+                  <img src="./img/img-2.jpg" alt="img-sub" class="img-sub" />
+                </a>
+              </div>
+              <div class="btn-item">
+                <span class="item-btn">
+                  <a href="#" class="btn"><i class="far fa-heart"></i></a>
+                  <a href="#" class="btn"
+                    ><i class="fas fa-exchange-alt"></i
+                  ></a>
+                  <a href="#" class="btn"><i class="fas fa-eye"></i></a>
+                </span>
+                <span class="item-btn-add-to-cart">
+                  <a href="#" class="btn-add-to-cart">Add To Cart</a>
+                </span>
+              </div>
+              <div class="rating-item">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star no-rate"></i>
+              </div>
+              <div class="title-price-item">
+                <h2>
+                  <a class="title-item" href="#"
+                    >Casual Shirt With Ruffle Hem</a
+                  >
+                </h2>
+                <p class="price-item">$122.00</p>
+              </div>
             </div>
+            <!-- end item 2 -->
+
+            <div class="info-item">
+              <div class="img-item">
+                <a class="img-hover" href="#">
+                  <img src="./img/img-1.jpg" alt="img-main" class="img-main" />
+                  <img src="./img/img-2.jpg" alt="img-sub" class="img-sub" />
+                </a>
+              </div>
+              <div class="btn-item">
+                <span class="item-btn">
+                  <a href="#" class="btn"><i class="far fa-heart"></i></a>
+                  <a href="#" class="btn"
+                    ><i class="fas fa-exchange-alt"></i
+                  ></a>
+                  <a href="#" class="btn"><i class="fas fa-eye"></i></a>
+                </span>
+                <span class="item-btn-add-to-cart">
+                  <a href="#" class="btn-add-to-cart">Add To Cart</a>
+                </span>
+              </div>
+              <div class="rating-item">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star no-rate"></i>
+              </div>
+              <div class="title-price-item">
+                <h2>
+                  <a class="title-item" href="#"
+                    >Casual Shirt With Ruffle Hem</a
+                  >
+                </h2>
+                <p class="price-item">$122.00</p>
+              </div>
+            </div>
+            <!-- end item 3 -->
+            <div class="info-item">
+              <div class="img-item">
+                <a class="img-hover" href="#">
+                  <img src="./img/img-1.jpg" alt="img-main" class="img-main" />
+                  <img src="./img/img-2.jpg" alt="img-sub" class="img-sub" />
+                </a>
+              </div>
+              <div class="btn-item">
+                <span class="item-btn">
+                  <a href="#" class="btn"><i class="far fa-heart"></i></a>
+                  <a href="#" class="btn"
+                    ><i class="fas fa-exchange-alt"></i
+                  ></a>
+                  <a href="#" class="btn"><i class="fas fa-eye"></i></a>
+                </span>
+                <span class="item-btn-add-to-cart">
+                  <a href="#" class="btn-add-to-cart">Add To Cart</a>
+                </span>
+              </div>
+              <div class="rating-item">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star no-rate"></i>
+              </div>
+              <div class="title-price-item">
+                <h2>
+                  <a class="title-item" href="#"
+                    >Casual Shirt With Ruffle Hem</a
+                  >
+                </h2>
+                <p class="price-item">$122.00</p>
+              </div>
+            </div>
+            <!-- end item 4 -->
           </div>
+          <!-- End list product 1 -->
 
-          <div class="product-reviews">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
+          <div class="list-product-haircare">
+            <div class="info-item">
+              <div class="img-item">
+                <a class="img-hover" href="#">
+                  <img
+                    src="./img/img-2.1.jpg"
+                    alt="img-main"
+                    class="img-main"
+                  />
+                  <img src="./img/img-1.1.jpg" alt="img-sub" class="img-sub" />
+                </a>
+              </div>
+              <div class="btn-item">
+                <span class="item-btn">
+                  <a href="#" class="btn"><i class="far fa-heart"></i></a>
+                  <a href="#" class="btn"
+                    ><i class="fas fa-exchange-alt"></i
+                  ></a>
+                  <a href="#" class="btn"><i class="fas fa-eye"></i></a>
+                </span>
+                <span class="item-btn-add-to-cart">
+                  <a href="#" class="btn-add-to-cart">Add To Cart</a>
+                </span>
+              </div>
+              <div class="rating-item">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star no-rate"></i>
+              </div>
+              <div class="title-price-item">
+                <h2>
+                  <a class="title-item" href="#"
+                    >Casual Shirt With Ruffle Hem</a
+                  >
+                </h2>
+                <p class="price-item">$122.00</p>
+              </div>
+            </div>
+            <!-- end item 1 -->
+            <div class="info-item">
+              <div class="img-item">
+                <a class="img-hover" href="#">
+                  <img
+                    src="./img/img-2.1.jpg"
+                    alt="img-main"
+                    class="img-main"
+                  />
+                  <img src="./img/img-1.1.jpg" alt="img-sub" class="img-sub" />
+                </a>
+              </div>
+              <div class="btn-item">
+                <span class="item-btn">
+                  <a href="#" class="btn"><i class="far fa-heart"></i></a>
+                  <a href="#" class="btn"
+                    ><i class="fas fa-exchange-alt"></i
+                  ></a>
+                  <a href="#" class="btn"><i class="fas fa-eye"></i></a>
+                </span>
+                <span class="item-btn-add-to-cart">
+                  <a href="#" class="btn-add-to-cart">Add To Cart</a>
+                </span>
+              </div>
+              <div class="rating-item">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star no-rate"></i>
+              </div>
+              <div class="title-price-item">
+                <h2>
+                  <a class="title-item" href="#"
+                    >Casual Shirt With Ruffle Hem</a
+                  >
+                </h2>
+                <p class="price-item">$122.00</p>
+              </div>
+            </div>
+            <!-- end item 2 -->
+
+            <div class="info-item">
+              <div class="img-item">
+                <a class="img-hover" href="#">
+                  <img
+                    src="./img/img-2.1.jpg"
+                    alt="img-main"
+                    class="img-main"
+                  />
+                  <img src="./img/img-1.1.jpg" alt="img-sub" class="img-sub" />
+                </a>
+              </div>
+              <div class="btn-item">
+                <span class="item-btn">
+                  <a href="#" class="btn"><i class="far fa-heart"></i></a>
+                  <a href="#" class="btn"
+                    ><i class="fas fa-exchange-alt"></i
+                  ></a>
+                  <a href="#" class="btn"><i class="fas fa-eye"></i></a>
+                </span>
+                <span class="item-btn-add-to-cart">
+                  <a href="#" class="btn-add-to-cart">Add To Cart</a>
+                </span>
+              </div>
+              <div class="rating-item">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star no-rate"></i>
+              </div>
+              <div class="title-price-item">
+                <h2>
+                  <a class="title-item" href="#"
+                    >Casual Shirt With Ruffle Hem</a
+                  >
+                </h2>
+                <p class="price-item">$122.00</p>
+              </div>
+            </div>
+            <!-- end item 3 -->
+            <div class="info-item">
+              <div class="img-item">
+                <a class="img-hover" href="#">
+                  <img
+                    src="./img/img-2.1.jpg"
+                    alt="img-main"
+                    class="img-main"
+                  />
+                  <img src="./img/img-1.1.jpg" alt="img-sub" class="img-sub" />
+                </a>
+              </div>
+              <div class="btn-item">
+                <span class="item-btn">
+                  <a href="#" class="btn"><i class="far fa-heart"></i></a>
+                  <a href="#" class="btn"
+                    ><i class="fas fa-exchange-alt"></i
+                  ></a>
+                  <a href="#" class="btn"><i class="fas fa-eye"></i></a>
+                </span>
+                <span class="item-btn-add-to-cart">
+                  <a href="#" class="btn-add-to-cart">Add To Cart</a>
+                </span>
+              </div>
+              <div class="rating-item">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star no-rate"></i>
+              </div>
+              <div class="title-price-item">
+                <h2>
+                  <a class="title-item" href="#"
+                    >Casual Shirt With Ruffle Hem</a
+                  >
+                </h2>
+                <p class="price-item">$122.00</p>
+              </div>
+            </div>
+            <!-- end item 4 -->
           </div>
-
-          <div class="price-product">
-            <a href="#">Casual Shirt With Ruffle Hem</a>
-            <p>$122.00</p>
-          </div>
-        </div>
-
-      <div class="product">
-        <div class="img-product">
-          <img src="./img/img-1.jpg" alt="img-1" />
-        </div>
-
-        <div class="overlay-product">
-          <div class="action-icon">
-            <i class="far fa-heart"></i>
-            <i class="fas fa-exchange-alt"></i>
-            <i class="fa-solid fa-eye"></i>
-          </div>
-
-          <div class="btn-add-to-cart">
-            <button class="add-to-cart" type="button">Add To Cart</button>
-          </div>
-        </div>
-        
-        <div class="product-reviews">
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-        </div>
-
-        <div class="price-product">
-          <a href="#">Casual Shirt With Ruffle Hem</a>
-          <p>$122.00</p>
         </div>
       </div>
     </div>

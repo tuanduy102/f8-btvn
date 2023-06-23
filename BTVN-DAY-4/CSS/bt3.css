@@ -1,117 +1,208 @@
-
-.block-title {
+*{
     text-align: center;
+}
+
+.product-best-seller {
+    width: 1200px;
+    min-width: 600px;
+    margin: 0 100px;
+}
+
+
+.title-section, .nav {
+    text-align: center;
+}
+
+.navigation-section {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.title-section {
     font-size: 20px;
 }
 
-.navigation {
-    display: flex;
-    justify-content: center;
+input[type="radio"] {
+    display: none;
+
 }
 
-
-ul {
+.list-tabs {
+    min-width: 580px;
+    padding: 0px;
+    margin-bottom: 60px;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
 
 li {
     display: inline-block;
-    padding: 10px 15px;
-    background-color: #ccc;
 }
 
-li:hover {
-    color: white;
-    background-color: rgb(33, 17, 121);
-}
-
-img {
-    width: 150px;
-}
-
-/* CSS thông tin sản phẩm */
-.list-product {
-    display: flex;
-    text-align: center;
-    width: 100%;
-    height: auto;
-    margin-top: 40px;
-}
-
-.product {
-    display: inline-block;
-    position: relative;
-    width: 150px;
-    height: auto;
-    margin: 0 20px 20px 0;
+label {
+    padding: 15px 20px;
+    background-color: #e2dfdf;
     cursor: pointer;
 }
 
-.product:hover .overlay-product {
-    opacity: 1;
+label:hover {
+    background-color: blueviolet;
+    color: white;
 }
 
-.overlay-product {
+.nav-tab:nth-of-type(1):checked ~ .nav .list-tabs .tabs-skincare {
+    background-color: blueviolet;
+    color: white;
+}
+
+.nav-tab:nth-of-type(2):checked ~ .container .container .tabs-skincare {
+    background-color: blueviolet;
+    color: white;
+}
+
+.nav-tab:nth-of-type(2):checked ~ .nav .list-tabs .tabs-haircare {
+    background-color: blueviolet;
+    color: white;
+}
+
+.nav-tab:nth-of-type(3):checked ~ .nav .list-tabs .tabs-cosmetics {
+    background-color: blueviolet;
+    color: white;
+}
+
+.nav-tab:nth-of-type(4):checked ~ .nav .list-tabs .tabs-fragrance {
+    background-color: blueviolet;
+    color: white;
+}
+
+.nav-tab:nth-of-type(5):checked ~ .nav .list-tabs .tabs-makeup {
+    background-color: blueviolet;
+    color: white;
+}
+
+/* Kết thúc phần nav */
+
+.container {
+    position: relative;
+}
+
+.list-product-skincare {
+    display: flex;
+    flex-wrap: wrap;
     position: absolute;
-    top: 38%;
+    top: 0;
+    left: 0;
+}
+
+.list-product-haircare {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.info-item .img-item .img-hover {
+    display: block;
+}
+
+.info-item {
+    width: 280px;
+    height: 480px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.img-item {
+    position: relative;
+    left: 38px;
+    width: 200px;
+    height: 300px;
+}
+
+.img-main, .img-sub {
+    position: absolute;
+    top: 0;
     left: 0;
     width: 100%;
-    height: 0%;
+    height: 100%;
+    transition: opacity 0.5s;
+}
+
+.img-sub {
     opacity: 0;
-    transition: 0.5s ease;
 }
 
-/* CSS action-icon */
-.action-icon {
-    /* display: none; */
-    width: 150px;
-    margin-bottom: 10px;
+.btn-item {
+    position: relative;
+    top: -22%;
+    left: 38px;
+    opacity: 0;
+    text-align: justify;
+}
+
+.btn {
+    padding: 16px 23px;
+    margin-right: 2px;
+    background-color: blueviolet;
+    color: white; 
+    
+}
+
+.item-btn-add-to-cart {
+    display: block;
+    width: 200px;
+    padding: 20px 0px;
+    margin-top: 28px;
+    background-color: blueviolet;
+    
 
 }
-.action-icon .fa-heart {
-    padding: 13px 16px;
-    font-size: 10px;
-    float: left;
+
+.btn-add-to-cart {
     color: white;
-    background-color: rgb(33, 17, 121);
+    text-decoration: none;
+    text-align: center;
+    
 }
 
-.action-icon .fa-exchange-alt {
-    padding: 13px 16px;
-    font-size: 10px;
-    color: white;
-    background-color: rgb(33, 17, 121);
+.rating-item {
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+    top: -10%
 }
 
-.action-icon .fa-eye {
-    padding: 13px 16px;
-    font-size: 10px;
-    float: right;
-    color: white;
-    background-color: rgb(33, 17, 121);
-}
-
-/* CSS nút add to cart */
-
-.add-to-cart {
-    /* display: none; */
-    width: 150px;
-    height: 34px;
-    padding: 5px;
-    border: none;
-    color: white;
-    background-color: rgb(33, 17, 121) ;
-    cursor: pointer;
-}
-
-/* sao đánh giá sản phẩm */
-.product-reviews .fa{
-    margin-top: 50px;
+.rating-item > .fa-star {
     color: orange;
 }
 
-.product-reviews .fas {
-    color: #b2b2b2;
+.rating-item > .no-rate {
+    color: #ccc;
+}
+
+.title-price-item {
+    position: relative;
+    text-align: center;
+    font-size: 12px;
+    top: -10%
+}
+
+.title-item {
+    color: black;
+    text-decoration: none;
+}
+
+
+.info-item:hover > .img-item > .img-hover > .img-sub {
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+}
+
+.info-item:hover > .btn-item {
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+}
+
+input[id="haircare"]:checked ~ .list-product-2 .img-item {
+    display: block;
 }
