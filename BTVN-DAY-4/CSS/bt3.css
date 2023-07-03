@@ -90,6 +90,7 @@ label:hover {
     position: absolute;
     top: 0;
     left: 0;
+    
 }
 
 .list-product-haircare {
@@ -98,7 +99,7 @@ label:hover {
     position: absolute;
     top: 0;
     left: 0;
-    display: none;
+    
 }
 
 .info-item .img-item .img-hover {
