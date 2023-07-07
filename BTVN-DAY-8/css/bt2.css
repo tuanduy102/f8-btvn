@@ -1,0 +1,200 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: #7F7F7F;
+    justify-content: right;
+}
+
+.cart {
+    width: 30%;
+    height: 100vh;
+    background: white;
+}
+
+
+.cart .title-cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #F4F4F4; 
+}
+
+.cart .title-cart h2 {
+    /* display: inline-block; */
+    padding: 15px;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.cart .title-cart h2::after {
+    content: "4";
+    /* padding-left: 10px; */
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    color: white;
+    background: #405FF2;
+    border-radius: 999px;
+    font-size: 0.7rem;
+    font-weight: 300;
+    position: absolute;
+    top: 10px;
+    right: -1px;
+}
+
+.title-cart .fa-solid {
+   /* display: flex; */
+   padding: 15px;
+   font-size: 1.3rem;
+   color: rgb(255, 68, 0);
+}
+
+.product {
+    border-bottom: 1px solid #acacac2b;
+}
+
+.item {
+    display: flex;
+    padding: 20px;
+}
+
+.image-item {
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+    background: #f6efe0;
+}
+
+.info-item {
+    padding-left: 15px;
+}
+
+.item-name {
+    font-size: 0.8rem;
+    color: #ACACAC;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.item-name::after {
+    content: "\f00d";
+    font-family: 'Font Awesome 6 Free';
+    font-size: 1.1rem;
+    position: absolute;
+    bottom: 10px;
+    right: -20px;
+}
+
+.product-number {
+    display: inline-block;
+    color: #ACACAC;
+    border: 1px solid #ACACAC;
+    height: 25px;
+    font-size: 0.8rem;
+    margin-right: 20px;
+    border-radius: 20px;
+    padding: 3px;
+    /* text-align: center; */
+}
+
+.number {
+    padding: 0 15px;
+}
+
+.minus {
+    padding-left: 7px;
+}
+
+.plus {
+    padding-right: 7px;
+}
+
+
+.price {
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding-left: 20px;
+}
+
+
+.subtotal {
+    width: 80%;
+    padding: 15px 12px 10px;
+}
+
+.title-subtotal {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.subtotal-price {
+    color: red;
+    font-size: 0.9rem;
+    float: right;
+}
+
+
+.subtotal p {
+    font-size: 0.6rem;
+    color:  #ACACAC;
+}
+
+.btn > div {
+    display: flex;
+    justify-content: center;  
+}
+
+
+button {
+   width: 85%;
+   padding: 10px 0;
+   border-radius: 5px;
+   border: 1px solid #ACACAC;
+   margin-bottom: 12px;
+   cursor: pointer;
+}
+
+.btn-view-cart {
+    color: #ACACAC;
+    background: white;
+}
+
+.btn-add-cart {
+    color: white;
+    background: #4060F3;
+}
+
+.ship {
+    padding: 10px 20px;
+}
+
+.ship span .fa-solid {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    font-size: 1.3rem;
+    border: 1px solid #4060F3;
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+    color: #4060F3;
+}
+
+.ship .free-ship {
+   font-size: 0.8rem;
+   font-weight: 600;
+   margin-left: 25px;
+}

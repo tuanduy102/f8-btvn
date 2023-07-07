@@ -53,8 +53,8 @@ body {
 .menu-new-item {
     width: 150px;
     list-style: none;
-    top: 90%;
-    left: -17% ;
+    top: 100%;
+    left: -17%;
     padding: 18px;
     cursor: pointer;
     /* bottom: -100%; */
@@ -70,7 +70,7 @@ body {
 }
 
 .new-item {
-    display: none;
+    display: block;
     width: 250px;
     height: auto;
     padding: 18px;
