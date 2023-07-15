@@ -51,7 +51,6 @@ ul {
     background-color: rgba(255, 0, 0, 0);
     bottom: 10%;
     right: 0;
-
 }
 
 .nav > ul li:hover > a {
@@ -81,6 +80,7 @@ div ul li a {
     bottom: 4%;
     right: 5%;
 }
+
 
 .nav > ul li:hover > .menu {
     display: block;

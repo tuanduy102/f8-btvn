@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: 'Inter', sans-serif; 
+}
+
+h2 {
+    display: inline-block;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.4rem;
+}
+
+p { 
+    color: #7d7979;
+    margin: 10px 0 20px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.roadmap-list {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.road-map {
+    width: 100%;
+    display: flex;
+}
+
+.road-map:hover > .content .name {
+    background: #008000;
+}
+
+.road-map:hover > .content {
+    position: absolute;
+    transform: scaleX(100%);
+}
+
+
+.content {
+    width: 60%;
+    text-align: right;
+    padding: 4% 5%;
+    position: relative;
+    border-right: 1px solid black;
+}
+
+.content::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #008000;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    right:0px;
+    transform: translateX(50%) translateY(50%);
+}
+
+.content::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: #A9F1AF;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    right: 0px;
+    transform: translateX(50%);
+}
+
+.name {
+    display: inline-block;
+    background-color: #ebe7e7;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.time {
+    width: 40%;
+    height: fit-content;
+    padding: 4.5% 5%;
+}
+
+.banner {
+    width: 50%;
+    text-align: right;
+}
+
+
+
